@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="título">
+  Blog de el Xabi
+</h1>
+<div id="back">
+  <div id="p1"></div>
+  <div id="p2"></div>
+  <div class="secciones">
+    <p id="post"><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a></p>
+    <p id="contacto"><a href="{{ get_url(path='@/contact/_index.md') }}">Contactos</a></p>
+    <p id="sobre"><a href="{{ get_url(path='@/about/_index.md') }}">Sobre mi</a></p>
+  </div>
+      <div class="caja">
+          <div class="pelota"></div>
+      </div>
+</div>
+{% endblock content %}
